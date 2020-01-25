@@ -31,7 +31,7 @@ body{
     #navbar-container_navbar_menu{
         height: 20px;
         width: 20px;
-        position: absolute;
+        position: fixed;
         display: inline-block;
         top: 10px;
         left: 10px;
@@ -60,24 +60,21 @@ body{
         width: 100vw;
         background: black;
         position: fixed;
+        top: 0;
+        left: 0;
         z-index: 100;
-    }
-
-    #menu-active_foreground{
-        height: 50vh;
-        width: 100vw;
-        background: orangered;
-        position: absolute;
-        top: 100px;
-        z-index: 150;
+        opacity: 0.9;
     }
 
     #menu-list{
         list-style: none;
+        position: absolute;
+        top: 100px;
+        z-index: 105;
     }
 
     .menu_list-item{
-        color: white;
+        color: red;
     }
 
     .invisible{
